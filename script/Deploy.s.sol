@@ -36,12 +36,16 @@ import {ReputationFeeHook} from "src/hooks/ReputationFeeHook.sol";
 contract DeployReputationFee is Script {
     uint160 internal constant FLAGS = uint160(Hooks.AFTER_INITIALIZE_FLAG | Hooks.BEFORE_SWAP_FLAG);
 
+    /// @notice Set before deploying: this is part of what the pool is, and it cannot change afterwards.
+    address public _registry;
+
+
     function run() external {
         IPoolManager manager = Chains.poolManager(block.chainid);
         require(address(manager) != address(0), "no Uniswap v4 PoolManager known for this chain");
 
         bytes memory creationCode = type(ReputationFeeHook).creationCode;
-        bytes memory constructorArgs = abi.encode(manager);
+        bytes memory constructorArgs = abi.encode(manager, _registry);
 
         (address predicted, bytes32 salt) =
             HookMiner.find(Chains.CREATE2_DEPLOYER, FLAGS, creationCode, constructorArgs);
@@ -56,7 +60,7 @@ contract DeployReputationFee is Script {
         }
 
         vm.startBroadcast();
-        ReputationFeeHook hook = new ReputationFeeHook{salt: salt}(manager);
+        ReputationFeeHook hook = new ReputationFeeHook{salt: salt}(manager, _registry);
         vm.stopBroadcast();
 
         require(address(hook) == predicted, "mined address did not match the deployment");
