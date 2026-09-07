@@ -1,0 +1,30 @@
+{
+  "name": "reputation-fee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Charges a counterparty according to how it has behaved, using an on-chain reputation registry, with no signature to present and nothing for a router to forward.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirholas/reputation-fee.git"
+  },
+  "homepage": "https://reputation-fee.pages.dev",
+  "keywords": [
+    "uniswap",
+    "uniswap-v4",
+    "uniswap-hooks",
+    "defi",
+    "amm",
+    "solidity",
+    "agent",
+    "reputation",
+    "dynamic-fee",
+    "erc8004",
+    "no-admin"
+  ],
+  "scripts": {
+    "build": "node web/build.mjs",
+    "contracts:build": "forge build",
+    "contracts:test": "forge test"
+  }
+}
