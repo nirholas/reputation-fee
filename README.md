@@ -1,5 +1,10 @@
 # ReputationFee
 
+<!-- three.ws:badges -->
+[![GitHub stars](https://img.shields.io/github/stars/nirholas/reputation-fee?style=flat&logo=github)](https://github.com/nirholas/reputation-fee/stargazers) [![License](https://img.shields.io/github/license/nirholas/reputation-fee?style=flat)](https://github.com/nirholas/reputation-fee/blob/HEAD/LICENSE) [![Last commit](https://img.shields.io/github/last-commit/nirholas/reputation-fee?style=flat)](https://github.com/nirholas/reputation-fee/commits) [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat)](https://github.com/nirholas/reputation-fee/pulls) [![AI agent friendly](https://img.shields.io/badge/AI%20agents-AGENTS.md%20%2B%20llms.txt-6d5dfc?style=flat)](https://github.com/nirholas/reputation-fee/blob/HEAD/AGENTS.md)
+<!-- /three.ws:badges -->
+
+
 **Charges a counterparty according to how it has behaved, using an on-chain reputation registry, with no signature to present and nothing for a router to forward.**
 
 A production Uniswap v4 hook. It prices every swap by overriding the pool's LP fee, so the value it captures is paid to in-range liquidity and never to the hook. No owner, no pause switch, no upgrade path.
@@ -117,3 +122,26 @@ Not affiliated with Uniswap Labs.
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=nirholas/reputation-fee&type=Date)](https://www.star-history.com/#nirholas/reputation-fee&Date)
+
+<!-- three.ws:growth -->
+## Support the project
+
+If reputation-fee saves you time, **[star it on GitHub](https://github.com/nirholas/reputation-fee)**. Stars are how other developers and AI agents find the repositories worth trusting, and they cost you one click.
+
+Know someone who would use it? [Post on X](https://twitter.com/intent/tweet?text=reputation-fee%3A%20Charges%20a%20counterparty%20according%20to%20how%20it%20has%20behaved%2C%20using%20an%20on-chain%20reputation%20registry%2C%20with&url=https%3A%2F%2Fgithub.com%2Fnirholas%2Freputation-fee) · [Share on Bluesky](https://bsky.app/intent/compose?text=reputation-fee%3A%20Charges%20a%20counterparty%20according%20to%20how%20it%20has%20behaved%2C%20using%20an%20on-chain%20reputation%20registry%2C%20with%20https%3A%2F%2Fgithub.com%2Fnirholas%2Freputation-fee) · [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Freputation-fee) · [Submit to Hacker News](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fgithub.com%2Fnirholas%2Freputation-fee&t=reputation-fee%3A%20Charges%20a%20counterparty%20according%20to%20how%20it%20has%20behaved%2C%20using%20an%20on-chain%20reputation%20registry%2C%20with) · [Share on Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Fgithub.com%2Fnirholas%2Freputation-fee&title=reputation-fee%3A%20Charges%20a%20counterparty%20according%20to%20how%20it%20has%20behaved%2C%20using%20an%20on-chain%20reputation%20registry%2C%20with)
+
+## Built for AI agents too
+
+Coding agents and LLM tooling can read this repo directly: [AGENTS.md](./AGENTS.md), [llms.txt](./llms.txt), [llms-full.txt](./llms-full.txt). Point an agent at `https://github.com/nirholas/reputation-fee` and it has the context it needs.
+
+## More from the same author
+
+- [All repositories by nirholas](https://github.com/nirholas/nirholas#readme): the full catalog, grouped by topic
+- [three.ws](https://three.ws): the platform for 3D AI agents with Solana wallets, a skill marketplace and x402 payments
+- Questions or ideas: [open an issue](https://github.com/nirholas/reputation-fee/issues) or [start a discussion](https://github.com/nirholas/reputation-fee/discussions)
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=nirholas/reputation-fee)](https://github.com/nirholas/reputation-fee/graphs/contributors)
+
+<!-- /three.ws:growth -->
